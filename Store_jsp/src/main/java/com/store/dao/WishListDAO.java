@@ -22,7 +22,8 @@ public class WishListDAO {
 	String username = "Ashwitha";
 	String password = "password";
 
-	public WishListDAO(){
+	// this is WishList here
+	public WishListDAO() {
 		try {
 			Class.forName(driver);
 			conn = DriverManager.getConnection(url, username, password);
@@ -44,11 +45,12 @@ public class WishListDAO {
 		}
 		return count;
 	}
-	
+
 	public int deleteProductFromList(int userid, int productid) {
 		int count = 0;
 		try {
-			System.out.println("userid : " + userid + " productid: " + productid);
+			System.out.println("userid : " + userid + " productid: "
+					+ productid);
 			String query = "delete from wishlist where userid = ? and productid = ?";
 			PreparedStatement pst = conn.prepareStatement(query);
 			pst.setInt(1, userid);
