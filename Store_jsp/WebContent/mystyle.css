@@ -1,0 +1,22 @@
+@CHARSET "ISO-8859-1";
+
+body{
+	background-image:url(images/background.jpg);
+}
+.image{
+	display:block;
+	margin-left: auto;
+	margin-right:auto
+}
+
+.division{
+	margin-left: auto;
+	margin-right:auto
+}
+
+.center{
+	text-align:center;
+}
+ul{
+	display-style:inline;
+}
